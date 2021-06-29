@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@font-face {
+    font-family: 'dosisextralight';
+    src: url('dosis-variablefont_wght-webfont.woff2') format('woff2'), url('dosis-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cmu_brightroman';
+    src: url('cmunbmr-webfont.woff2') format('woff2'), url('cmunbmr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cmu_serifroman';
+    src: url('cmunrm-webfont.woff2') format('woff2'), url('cmunrm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cmuserif {
+    font-family: 'cmu_serifroman';
+}
+
+* {
+    color: white !important;
+    font-family: 'Dosis', sans-serif;
+}
+
+.capitals {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.text-contents * {
+    font-family: 'cmu_brightroman';
+}
+
+.cmu {
+    font-family: 'cmu_brightroman';
+}
+
+.large {
+    font-size: 26px;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}

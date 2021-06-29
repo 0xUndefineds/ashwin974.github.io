@@ -1,0 +1,146 @@
+.main-move {
+    margin-left: -7px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction * {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skills-img {
+    background-image: url(../../../images/background/icons/skills/skills.png);
+}
+
+.container-progress-bar {
+    width: 217px;
+    height: 10px;
+    border-top-left-radius: 20em;
+    border-top-right-radius: 20em;
+    border-bottom-left-radius: 20em;
+    border-bottom-right-radius: 20em;
+    background: white;
+    overflow: hidden;
+}
+
+.layer-one-coulour {
+    height: 100%;
+}
+
+.display--left-side-settings {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 7px;
+}
+
+.left-side-container {
+    width: 313px;
+    height: 100%;
+    /* border: 5px solid red; */
+    position: absolute;
+    top: 0px;
+}
+
+.main-move,
+.left-side-container {
+    background-image: url(../../../images/background/left-banner.png);
+    box-shadow: 3px 1px 30px #000000cc;
+    border-radius: 2em;
+}
+
+@media screen and (max-width:1025px) {
+    .main-moven,
+    .left-side-container {
+        background-image: none;
+        box-shadow: none;
+    }
+}
+
+.expose {
+    height: 250px;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+}
+
+.pics {
+    height: 200px;
+    width: 148px;
+    background-image: url(../../../images/background/photo/photo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -2px;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about-logo {
+    text-align: center;
+}
+
+.text-description {
+    margin-top: 25px;
+    font-family: 'cmu_brightroman';
+    text-align: justify;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.car {
+    background-image: url(../../../images/background/icons/car/car.png);
+}
+
+.licence {
+    background-image: url(../../../images/background/icons/licence-dri/licence-dri.png);
+}
+
+.i3 {
+    flex-direction: column;
+}
+
+.i2 {
+    justify-content: left !important;
+    margin-top: 5px;
+}
+
+.i1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.i1 * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.i4 {
+    position: absolute;
+    left: 66px;
+    max-width: 240px;
+}
+
+.contact-s1 {
+    background-image: url(../../../images/background/icons/contact/contact.png);
+}
+
+.addr {
+    background-image: url(../../../images/background/icons/geoloc/geoloc.png);
+}
+
+.phone {
+    background-image: url(../../../images/background/icons/phone/phone.png);
+}
+
+.mail {
+    background-image: url(../../../images/background/icons/mail/mail.png);
+}

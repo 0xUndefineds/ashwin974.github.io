@@ -1,0 +1,48 @@
+/**General Settings Icons**/
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gen-icons-set {
+    width: 43px;
+    height: 43px;
+    border: 2px solid white;
+    border-radius: 30em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/**General Logo **/
+
+.gen-logo-set {
+    width: 43px;
+    height: 43px;
+    border-radius: 30em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/**General Clock **/
+
+.clock {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../images/background/icons/Clock/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media screen and (max-width:640px) {
+    .date {
+        position: absolute;
+        width: 400px;
+        left: 17px;
+    }
+}

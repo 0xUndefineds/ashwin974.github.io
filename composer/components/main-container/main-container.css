@@ -1,0 +1,13 @@
+body {
+    background-image: url('../../images/background/main-background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-color: blueviolet; */
+}
+
+@media screen and (max-width:1025px) {
+    body {
+        background-image: url('../../images/background/main-background-require.jpg');
+        background-repeat: no-repeat;
+    }
+}

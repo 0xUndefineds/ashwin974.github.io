@@ -1,0 +1,8 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background: rgb(186, 83, 147);
+    background: radial-gradient(circle, rgba(186, 83, 147, 1) 0%, rgba(50, 62, 222, 1) 100%); */
+    overflow-x: hidden;
+}

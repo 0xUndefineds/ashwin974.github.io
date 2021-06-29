@@ -1,0 +1,75 @@
+.circle-component {
+    width: 30px;
+    height: 30px;
+    border-radius: 20em;
+    background: #43cdf3;
+    position: absolute;
+}
+
+.bar-component {
+    width: 10px;
+    height: 1455px;
+    background: #43cdf3;
+    position: absolute;
+    top: 28px;
+}
+
+.ajustable-sizebar {
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    /* display: flex; */
+    position: absolute;
+    left: 326px;
+    top: 64px;
+}
+
+.second {
+    top: 484px;
+}
+
+.third {
+    top: 970px;
+}
+
+.five {
+    top: 1160px;
+}
+
+.six {
+    top: 1200px;
+}
+
+.seven {
+    top: 1366px
+}
+
+.eight {
+    top: 1463px;
+}
+
+.testnet-sizebar-devellopment {
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    border-radius: 20em;
+    background-color: aqua;
+    margin-left: 8px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.specs {
+    height: 15px;
+    width: 15px;
+    border-radius: 15em;
+    background-color: aqua;
+    position: absolute;
+}
+
+.specs-ini-1 {
+    margin-top: -13px;
+}

@@ -1,0 +1,42 @@
+.icones {
+    width: 30px;
+    height: 30px;
+    /* border: 2px solid white; */
+    border-radius: 30em;
+}
+
+.third-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.main_container_third_items,
+.second_container_third_items {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    padding-left: 18px;
+    margin-top: 13px;
+}
+
+.main_container_third_items *,
+.second_container_third_items * {
+    margin-right: -42px;
+    margin-left: 57px;
+}
+
+.images_1-third-items {
+    background-image: url(../../../images/background/logo-enterprise/Orange.png);
+}
+
+.images_2-third-items {
+    background-image: url(../../../images/background/logo-enterprise/Mairie_.png);
+}
+
+.images_3-third-items {
+    background-image: url(../../../images/background/logo-enterprise/iut.png);
+}

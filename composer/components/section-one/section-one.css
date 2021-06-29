@@ -1,0 +1,64 @@
+.section-one {
+    position: relative;
+    /* border: 2px solid white; */
+    width: 700px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    margin-left: 310px;
+}
+
+
+/*@TEMP*/
+
+.more {
+    cursor: pointer;
+}
+
+.more::after {
+    border: 2px solid white;
+    width: 22px;
+    height: 22px;
+    border-radius: 20em;
+    margin-left: 11px;
+    position: absolute;
+    content: "";
+    transition: 3s ease-in-out;
+    background-image: url('../../../composer/images/background/icons/about/infov2.png');
+    background-size: contain;
+    animation: loadingBackground 1s ease 0s infinite alternate;
+    /* animation: loadingBackground 3s ease-in-out 0s infinite ; */
+}
+
+@keyframes loadingBackground {
+    0% {}
+    10% {
+        box-shadow: 1px 1px 7px white;
+    }
+    20% {
+        box-shadow: 1px 3px 7px white;
+    }
+    30% {
+        box-shadow: -2px 3px 7px white;
+    }
+    40% {
+        box-shadow: -2px 1px 7px white
+    }
+    50% {
+        box-shadow: -2px -3px 7px white;
+    }
+    60% {
+        box-shadow: 1px -2px 7px white;
+    }
+    70% {
+        box-shadow: 2px 1px 7px white;
+    }
+    80% {
+        box-shadow: 2px 2px 7px white;
+    }
+    90% {
+        box-shadow: -1px 2px 7px white;
+    }
+    100% {
+        box-shadow: -2px 4px 13px white;
+    }
+}

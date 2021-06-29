@@ -1,0 +1,104 @@
+let checker_sts;
+let finds_sts;
+let aggressive_sts;
+let synchronizer_sts;
+let analyse_sts;
+
+
+function require(x_1, x_2, x_3, x_4, x_5, x_6) {
+    console.log("%c                                            ORX  SYSTEM develloped by Ashwin MK                                            ", "font-size:15px;font-family:'coalition'")
+    orxDisplayMessage(" ORX  SYSTEM develloped by Ashwin Malbrouck ak Ashwin MK AMK ")
+    console.log("%c Démarrage des moudules requis pour  Oriented Relative X ... ", 'font-style:italic')
+    orxDisplayMessage("Démarrage des moudules requis pour  Oriented Relative X ...")
+    console.log("%c Clé API Utilisé : " + api_keys.substring(0, 15) + '...', 'font-style:italic') //Pour ne pas afficher toute la clé api comme sa
+    orxDisplayMessage('Clé API Utilisé : ' + api_keys.substring(0, 15) + '...')
+    if (x_1 == "checker.js" || x_2 == 'checker.js') {
+        console.log("%c checker.js [OK]", "color:green")
+        loadingData()
+        checker_sts = true;
+    } else {
+        error_status += 1;
+        checker_sts = false;
+    }
+    if (x_2 == "finds.js" || x_1 == 'finds.js') {
+        const finds = document.createElement('script')
+        finds.src = "js/pannelAccess/finder/finds.js"
+        head.appendChild(finds)
+        console.log("%c finds.js [OK]", "color:green")
+        finds_sts = true;
+    } else {
+        error_status += 1;
+        finds_sts = false;
+    }
+    if (x_3 == "aggressive.js" || x_1 == "aggressive.js") {
+        console.log("%c aggressive.js [OK] ", "color:green")
+        const aggresCalls = document.createElement('script')
+        aggresCalls.src = "js/pannelAccess/aggressive.js/aggressiveCalls.js"
+        const aggressSearch = document.createElement('script')
+        aggressSearch.src = "js/pannelAccess/aggressive.js/aggressiveSearch.js"
+        head.appendChild(aggressSearch)
+        head.appendChild(aggresCalls)
+        aggressive_sts = true;
+    } else {
+        error_status += 1;
+        aggressive_sts = false;
+    }
+    if (x_4 == 'synchronizer.js') {
+        console.log("%c synchronizer.js [OK] ", "color:green")
+        synchronize = function synchronize(exec) {
+            setTimeout(_ => {
+                if (Object.keys(exec).includes('finds')) {
+                    setTimeout(function() {
+                        if (mydata.length > 0) {
+                            //console.log('mydata [OK]  Entrer : ' + mydata.length)
+                            finds(exec.finds.c1, exec.finds.c2)
+                            console.log("%c Data [OK]", "color:green")
+                            console.log(data_from_finds)
+                        }
+                    }, 1200)
+
+
+                } else {
+                    console.log("%c syncronize n'est pas correctement configuré", 'background: #fff; color: #bd4141')
+                    error_status += 1;
+                }
+            }, 500)
+            synchronizer_sts = true;
+        }
+    } else {
+        error_status += 1;
+        synchronizer_sts = false;
+    }
+    if (x_5 == "analyse.js") {
+        const analyse = document.createElement('script')
+        console.log("%c analyze.js [OK]", "color:green")
+        analyse.src = "vm/analyse.js"
+        head.appendChild(analyse)
+        analyse_sts = true;
+
+    } else {
+        error_status += 1;
+        analyse_sts = false;
+    }
+    if (x_6 == "x-visualize.js") {
+        const xvisualize = document.createElement('script')
+        xvisualize.src = 'js/xvisualize/xvisualize.js'
+        head.appendChild(xvisualize)
+        console.log("%c x-visualize.js [OK]", "color:green")
+    }
+
+
+}
+
+apps(_ => {
+    if (error_status == 0) {
+        console.log('%c ORX SYSTEM> STATUS :  [OK] ', 'font-style:italic;font-size:14px')
+        orxDisplayMessage('ORX SYSTEM> STATUS :  [OK]')
+    }
+    if (error_status > 0) {
+        console.log("%c ORX SYSTEM> STATUS :  [CRITICAL ERROR]", "font-weight:600;color:#c44b4b;;font-size:14px")
+        orxDisplayMessage('ORX SYSTEM> STATUS :  [CRITICAL ERROR]')
+        p3.textContent = "ORX SYSTEM> STATUS :  [CRITICAL ERROR]  "
+    }
+
+}, 8000)

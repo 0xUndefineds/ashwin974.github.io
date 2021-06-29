@@ -1,0 +1,61 @@
+/* animate transitio testnet */
+
+.images_3-third-items {
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width:1025px) {
+    .testnet-sizebar-devellopment {
+        display: flex;
+    }
+    .left-side-container {
+        position: relative;
+        width: 100%;
+    }
+    .ajustable-sizebar {
+        display: none;
+    }
+    .about {
+        margin-top: -12px;
+        padding: 10px;
+        margin-left: -2px;
+    }
+    .section-one {
+        position: relative;
+        margin-left: 0px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .third-items {
+        margin-left: -40px;
+    }
+    .section-one {
+        transform: none;
+        left: 0;
+        width: auto;
+    }
+    .four-items {
+        margin-left: 47px;
+    }
+    .second-items {
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .third-items {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.section-one:nth-child(10) {}
